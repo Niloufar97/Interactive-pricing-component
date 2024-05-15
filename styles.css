@@ -4,21 +4,72 @@
     box-sizing: border-box;
 }
 body{
+   min-height: 100vh;
+   background-color: hsl(230, 100%, 99%);
+}
+/* header------------------------------------------------------ */
+.background{
     background-image: url('./images/bg-pattern.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    height: 50vh;
+    position: relative;
 }
 .header{
     background-image: url('./images/pattern-circles.svg');
     background-position: center;
     background-repeat: no-repeat;
     height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.header h2{
+    font-size: 1.8rem;
+    color:  hsl(227, 35%, 25%);
+}
+.header p{
+    font-size: 1rem;
+    color: hsl(225, 20%, 60%)
+}
+/* card------------------------------------------------------------- */
+.card{
+    width: 500px;
+    height: 350px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 20px 5px hsl(230, 100%, 99%); 
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.price-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+}
+.price-container p{
+    color: hsl(225, 20%, 60%);
+}
+.price-container .price{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.price-container span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(227, 35%, 25%);
 }
